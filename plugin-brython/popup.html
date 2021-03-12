@@ -1,0 +1,63 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" src="./assets/css/bootstrap.min.css">
+
+    <style>
+
+
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+      }
+      #status {
+        /* avoid an excessively wide status text */
+        white-space: pre;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 800px;
+      }
+
+
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+
+  </head>
+
+  <body>
+    <form class="form-inline">>
+    <!--<input type="file"
+       id="avatar" name="avatar"
+       accept="image/png, image/jpeg">
+
+      <div img id="image-result" hidden>
+    -->
+        <div id="bt2"></div>
+        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+        <button type="submit" id="bt1" class="btn btn-primary mb-2">Transcribe</button>
+    </form>  
+  </body>
+    <script src="./popup.js"></script>
+    <script src="./assets/js/bundle.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+
+
+</html>

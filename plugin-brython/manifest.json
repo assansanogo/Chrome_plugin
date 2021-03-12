@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "Transcribe!",
+  "description": "This extension transcribes audio",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "./jam.png",
+    "default_popup": "./popup.html"
+  },
+
+   "background": {
+    "scripts": ["./background.js"],
+    "persistent": false
+  },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
+}
