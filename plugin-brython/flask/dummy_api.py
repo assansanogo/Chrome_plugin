@@ -18,16 +18,7 @@ def hello_world():
 @app.route('/msg', methods=['GET', 'POST', 'OPTIONS'])
 @cross_origin(origin='*',headers=['Content-Type','Authorization'])
 def receive_info():
-	#print(request.url)
-	#print(request.json)
-	#print(request.origin)
-	#print(request.content_type)
-	#print(request.data)
-	#print(list(request.args))
-	#print(dir(request))
 	print(request.data)
-
-
 	return request.data
 
 
